@@ -1,0 +1,8 @@
+.label, .input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.label {
+    font-weight: 600;
+}

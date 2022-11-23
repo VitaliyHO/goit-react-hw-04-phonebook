@@ -1,7 +1,6 @@
-import "./App.css";
 import { nanoid } from "nanoid";
 import React, { useState, useEffect } from "react";
-import { Form } from "./Components/Form/Form";
+import { AddContactForm } from "./Components/Form/Form";
 import { Contacts } from "./Components/Contacts/Contacts";
 import { Search } from "./Components/Search/Search";
 
@@ -69,7 +68,7 @@ function App() {
   return (
     <div className="App">
       <h1>Phonebook</h1>
-      <Form formSubmit={formSubmitHandler} />
+      <AddContactForm formSubmit={formSubmitHandler} />
       <h2>Contacts</h2>
       <Search handleSearch={handleSearch} />
       <Contacts
